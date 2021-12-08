@@ -45,10 +45,8 @@ class TrainingPipeline:
 
 
     def train(self, serialize: bool = True, model_name: str = 'model.joblib'):
-        # model = DecisionTreeModel()
-        model = RandomForestModel(300)
-        # model = RandomForestModel(200,class_weight= "balanced")
-        # model = make_pipeline(SMOTE(random_state=42),RandomForestModel(n_estimators=200))
+        model = RandomForestModel(250)
+
 
         self.model = model
 
